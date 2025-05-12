@@ -1,4 +1,3 @@
-// components/MouseSpotlight.tsx
 "use client";
 import { useEffect, useState } from "react";
 
@@ -15,15 +14,18 @@ export default function MousePointer() {
 
   return (
     <div
-      className="pointer-events-none fixed top-0 left-0 w-screen h-screen z-50 mix-blend-difference"
-      style={{ pointerEvents: "none" }}
+      className="pointer-events-none fixed top-0 left-0 w-screen h-screen z-50"
+      style={{ pointerEvents: "none" }} // quitamos mix-blend-difference
     >
       <div
-        className="absolute w-32 h-32 rounded-full bg-purple-600/50 backdrop-blur-xl transition-all duration-300 ease-out"
+        className="absolute rounded-full transition-all duration-300 ease-out"
         style={{
-          transform: `translate(${position.x - 64}px, ${position.y - 64}px)`,
-          boxShadow: "0 0 20px 10px rgba(128, 0, 128, 0.6)", // Sombra morada
-          filter: "blur(15px)", // Filtro de desenfoque
+          transform: `translate(${position.x - 500}px, ${position.y - 500}px)`,
+          width: "1000px",
+          height: "1000px",
+          background: "radial-gradient(circle, rgba(186, 85, 211, 0.2) 0%, rgba(186, 85, 211, 0.05) 70%, rgba(186, 85, 211, 0) 100%)", // degradado morado suave
+          opacity: 0.4, // luz tenue
+          filter: "blur(50px)", // borde muy difuso
         }}
       />
     </div>
