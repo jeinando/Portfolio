@@ -3,7 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
 import Footer from "@/components/Footer";
-import MousePointer from "@/components/MouseSpotlight"; // Asegúrate de importar correctamente el componente
+import MousePointer from "@/components/MouseSpotlight"; 
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jacob Portfolio",
-  description: "Portfolio personal de Jacob, creado con Next.js y Tailwind CSS",
+  title: "Jacob Tellez ",
+  description: "Personal portfolio",
 };
 
 export default function RootLayout({
@@ -32,7 +32,7 @@ export default function RootLayout({
       >
         <MousePointer /> {/* Aquí lo agregas */}
         <main>{children}</main> {/* Aquí se renderiza el contenido de las páginas */}
-        <Footer /> {/* El footer se mantiene */}
+    
       </body>
     </html>
   );
