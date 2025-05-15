@@ -20,7 +20,7 @@ const About = () => {
           transition={{ duration: 0.6 }}
         >
           <p className="text-gray-400 leading-relaxed">
-            I'm a passionate System Engineering student with a solid understanding of modern web technologies such as TypeScript, Next.js, and Tailwind CSS. While I may not yet have extensive industry experience, I have developed several personal projects that reflect my problem-solving skills, clean code practices, and attention to user experience.
+            I'm a passionate System Engineering student with a solid understanding in several technologies. While I may not yet have extensive industry experience, I have developed several personal projects that reflect my problem-solving skills, clean code practices, and attention to user experience.
             <br /><br />
             I'm highly motivated to grow in a collaborative environment where I can both contribute to real-world projects and learn from experienced professionals. I take initiative, enjoy debugging and refining code, and am comfortable picking up new tools or frameworks as needed. My academic background has also given me a strong base in computer science fundamentals like algorithms, data structures, and systems analysis.
             <br /><br />

@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-
-import MousePointer from "@/components/MouseSpotlight"; 
+import MousePointer from "@/components/MouseSpotlight";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,8 +15,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Jacob Tellez ",
+  title: "Jacob Tellez",
   description: "System Engineer",
+  icons: {
+    icon: "/favicon.ico", 
+  },
 };
 
 export default function RootLayout({
@@ -26,13 +28,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="es">
+    <html lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-gray-900`}
       >
-        <MousePointer /> {/* Aquí lo agregas */}
-        <main>{children}</main> 
-    
+        <MousePointer />
+        <main>{children}</main>
       </body>
     </html>
   );
